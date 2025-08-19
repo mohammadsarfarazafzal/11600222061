@@ -10,9 +10,14 @@ const shortUrl = AsyncHandler(async (req, res)=>{
 
         const { url, validity, shortcode } = req.body;
 
+        let exist = false;
+
+        if(shortcode === ""){
+            exist = true;
+        }
+
         const urlExist = Url.findOne({ shortUrl: shortcode });
 
-        let exist = false;
 
         if(!urlExist){
             exist = true;
