@@ -1,0 +1,11 @@
+{
+  "name": "backend-test-submission",
+  "version": "1.0.0",
+  "description": "url shortener",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sarfaraz",
+  "license": "ISC"
+}
